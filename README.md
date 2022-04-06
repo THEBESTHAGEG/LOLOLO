@@ -29,7 +29,7 @@ local board = Get_Board()
 
 local platform = Instance.new("Part")
 platform.Parent = workspace
-platform.Position = Vector3.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 10, board.MAIN.CFrame.Z + 10)
+platform.Position = Vector3.new(board.MAIN.CFrame.X)
 platform.Anchored = true
 
 wait()
