@@ -12,7 +12,7 @@ function Get_Board()
 end
 
 function Dupe(board)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 5, board.Controls.Close.Pad.CFrame.Z)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Open.Pad.CFrame.X, board.Controls.Open.Pad.CFrame.Y + 15, board.Controls.Close.Pad.CFrame.Z)
     
 end
 
