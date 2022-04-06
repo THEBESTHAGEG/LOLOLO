@@ -16,7 +16,6 @@ function Dupe(board)
     wait(1)
     game:GetService("ReplicatedStorage").RemoteEvents.Jumped:FireServer()
     wait(0.4)
-    game.Players.LocalPlayer:
     game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, Player)
 end
 
