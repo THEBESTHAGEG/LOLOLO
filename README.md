@@ -12,19 +12,16 @@ function Get_Board()
 end
 
 function Dupe(board)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 10, board.Controls.Close.Pad.CFrame.Z)
-    wait(1)
-    game:GetService("ReplicatedStorage").RemoteEvents.Jumped:FireServer()
-    wait(0.4)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 5, board.Controls.Close.Pad.CFrame.Z)
     
 end
 
 function Drop(amt)
     for i=1, amt do
         game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(getgenv().item_name)
-        wait(0.3)
+        wait(0.7)
         game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(getgenv().item_name)
-        wait(0.3)
+        wait(0.7)
     end
 end
 
