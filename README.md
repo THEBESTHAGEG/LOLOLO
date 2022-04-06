@@ -36,7 +36,6 @@ platform.Anchored = true
 
 wait()
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 15, board.MAIN.CFrame.Z + 10)
 Drop(15)
 wait(1)
 Dupe(board)
