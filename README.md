@@ -14,7 +14,6 @@ end
 function Dupe(board)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 5, board.Controls.Close.Pad.CFrame.Z)
 
-   
 end
 
 function Drop(amt)
@@ -36,6 +35,6 @@ platform.Anchored = true
 wait()
 
 
-Drop(15)
+Drop(50)
 wait(1)
 Dupe(board)
