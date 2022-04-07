@@ -6,13 +6,13 @@ wait(1)
 function Get_Board()
     for i,v in pairs(workspace.Boards:GetChildren()) do
         if v.Player1.Value == nil and v.Player2.Value == nil then
-            don't v
+            return v
         end
     end
 end
 
 function Dupe(board)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 10, board.Controls.Close.Pad.CFrame.Z)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 15, board.Controls.Close.Pad.CFrame.Z)
     wait(1)
     wait(0.4)
 end
@@ -32,10 +32,8 @@ local platform = Instance.new("Part")
 platform.Parent = workspace
 platform.Position = Vector3.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 10, board.MAIN.CFrame.Z + 10)
 platform.Anchored = true
-
 wait()
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 15, board.MAIN.CFrame.Z + 10)
 Drop(800)
 wait(1)
 Dupe(board)
