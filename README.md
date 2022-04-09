@@ -34,6 +34,6 @@ platform.Position = Vector3.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 10, b
 platform.Anchored = true
 wait()
 
-Drop(800)
+Drop(60)
 wait(1)
 Dupe(board)
