@@ -1,6 +1,6 @@
 repeat wait()
 until game:IsLoaded()
-
+ 
 wait(1)
 
 function Get_Board()
